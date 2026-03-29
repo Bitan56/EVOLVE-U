@@ -1,1 +1,17 @@
 @import "output.css";
+
+.pentagon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    animation: vanish 3s alternate infinite;
+}
+
+@keyframes vanish{
+    from{
+        opacity: 0;
+        scale: 0.9;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
