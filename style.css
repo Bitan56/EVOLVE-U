@@ -1,11 +1,11 @@
 @import "output.css";
 
-.pentagon {
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    animation: vanish 3s alternate infinite;
+.pulse-circle {
+    border-radius: 50%;
+    animation: pulse 3s alternate infinite;
 }
 
-@keyframes vanish{
+@keyframes pulse{
     from{
         opacity: 0;
         scale: 0.9;

@@ -12,6 +12,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="font-[poppins]">
@@ -25,7 +30,10 @@
                 <div class="flex justify-between items-center px-[20px] pt-[20px]">
                     <!-- Left side of navbar -->
                     <div class="flex gap-[20px] items-center">
-                        <div class="h-[40px] w-[40px] bg-[gray] rounded-[10px]">
+                        <div class="h-[40px] w-[40px] bg-[#13f526] rounded-[10px] flex items-center justify-center">
+                            <!-- Add your logo here -->
+                            <i data-lucide="code" class="text-[white]"></i>
+
                         </div>
                         <div>
                             <h1 class="font-[poppins] font-[900] text-[32px] tracking-[4px]">EVOLVE U</h1>
@@ -65,10 +73,11 @@
                 </div>
 
                 <!-- Body Right panel -->
-                 <div class="pentagon w-[40%] h-[400px] bg-gray-500 rounded-[20px] overflow-hidden">
+                <div class="pulse-circle w-[400px] h-[400px] bg-gray-500 overflow-hidden">
                     <!-- Enter your image here -->
-                     <img src="https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww" alt="" class="h-full w-full">
-                 </div>
+                    <img src="./assets/side-img.png"
+                        alt="" class="h-full w-full">
+                </div>
 
             </div>
 
@@ -76,6 +85,16 @@
         </div>
 
     </header>
+
+    <section
+        class="relative w-full h-[100vh] bg-[url('https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nfGVufDB8fDB8fHww')] bg-no-repeat bg-cover">
+
+        <!-- Section Body -->
+        <div class="absolute h-full w-full bg-[rgba(0,0,0,0.7)] backdrop-blur-[3px]">
+            
+        </div>
+
+    </section>
 
     <nav id="navbar"
         class="absolute left-0 top-0 w-full h-[70px] bg-[black] text-[white] flex items-center justify-between px-[20px] hidden">
